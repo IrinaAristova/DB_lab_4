@@ -7,8 +7,8 @@ url = url if url else "mongodb://localhost:27017"
 client = MongoClient(url)
 
 
-db = client.ZNO
-db.ZNO.drop()
+db = client.ZNO_db
+
 
 def read_file(year, file_name, log, max_block_size = 1000):
     start_time = datetime.datetime.now()
