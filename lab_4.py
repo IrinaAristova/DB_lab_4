@@ -1,10 +1,10 @@
 from pymongo import MongoClient
-import csv
 import datetime
+import csv
 
-url = input("Введіть MongoDB URL: ")
-url = url if url else "mongodb://localhost:27017"
-client = MongoClient(url)
+url_db = input("Введіть MongoDB URL: ")
+url_db = url_db if url_db else "mongodb://localhost:27017"
+client = MongoClient(url_db)
 
 
 db = client.ZNO_db
